@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Converter</h1>
+            <p class="author">Made by Sampath Sai Paladi</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            </div>
+        </header>
+        <main>
+            <section class="upload-section">
+                <h2>Upload and Convert Images</h2>
+                <input type="file" id="fileInput" accept="image/*" multiple>
+                <div class="preview">
+                    <h3>Preview</h3>
+                    <div id="imagePreviewContainer"></div>
+                </div>
+                <div class="options">
+                    <div class="option-group">
+                        <label for="compression">Compression:</label>
+                        <input type="range" id="compression" min="0" max="100" value="50">
+                        <span id="compressionValue">50%</span>
+                        <div class="presets">
+                            <button data-size="20-50KB">20-50 KB</button>
+                            <button data-size="2MB">2 MB</button>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label for="resolution">Resolution:</label>
+                        <input type="number" id="width" placeholder="Width" class="number-input">
+                        <input type="number" id="height" placeholder="Height" class="number-input">
+                    </div>
+                    <div class="option-group">
+                        <label for="format">Format:</label>
+                        <select id="format">
+                            <option value="jpeg">JPEG</option>
+                            <option value="png">PNG</option>
+                            <option value="gif">GIF</option>
+                            <option value="tiff">TIFF</option>
+                            <option value="psd">PSD</option>
+                            <option value="pdf">PDF</option>
+                            <option value="eps">EPS</option>
+                            <option value="ai">AI</option>
+                            <option value="indd">INDD</option>
+                            <option value="raw">RAW</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" id="lossless"> Lossless Compression
+                        </label>
+                    </div>
+                </div>
+                <button id="convertButton">Convert</button>
+            </section>
+            <section class="output-section">
+                <h2>Output</h2>
+                <div id="output"></div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
