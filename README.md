@@ -4,7 +4,7 @@ This is a simple web application to convert, compress, and resize images. Suppor
 
 ## Features
 
-- Convert between image formats
+- Convert between image formats and compress
 - Compress images with percentage-based control
 - Resize images to custom dimensions
 - Lossless compression option
